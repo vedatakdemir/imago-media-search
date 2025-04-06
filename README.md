@@ -49,6 +49,28 @@ The backend serves as a lightweight API to the Elasticsearch server, and the fro
 
 ---
 
+## Environment Setup
+
+Before running the backend, you need to create a `.env` file based on the provided `.env.example` in the `backend/` directory.
+
+```bash
+cp backend/.env.example backend/.env
+```
+
+Then, fill in your Elasticsearch credentials inside the newly created `.env` file:
+
+```env
+ELASTIC_HOST=https://your-elasticsearch-url
+ELASTIC_USERNAME=your-username
+ELASTIC_PASSWORD=your-password
+```
+
+Make sure the backend can securely connect to your Elasticsearch instance using these values.
+
+> The `.env.example` file is included for reference. Don't forget to create your own `.env` file before running the project.
+
+---
+
 ## Getting Started
 
 ### Local Development
